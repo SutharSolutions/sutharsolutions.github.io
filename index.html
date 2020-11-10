@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suthar Solutions</title>
+
+    <meta name="description"
+        content="NCERT Solutions Class 6 to 12 Maths are provided here for free and also offers for free PDF Download. Clear your doubts with NCERT Solutions Class 6 to 12 prepared by our experts at sutharsolutions." />
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Suthar Solutions" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="Suthar Solutions" />
+
+    <meta property="og:description"
+        content="NCERT Solutions Class 6 to 12 Maths are provided here for free and also offers for free PDF Download. Clear your doubts with NCERT Solutions Class 6 to 12 prepared by our experts at sutharsolutions." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="sutharsolutions" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        /*---------Navigation--------*/
+        #nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar {
+            background-image: linear-gradient(to right, #2493be, #0b83b3);
+            padding: 0 !important;
+        }
+
+        .navbar-brand {
+            padding-left: 10px;
+            font-size: 10px;
+
+            color: #ffffff;
+            font-weight: 900;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+
+        .navbar-nav li a {
+            color: #ffffff !important;
+            font-weight: 600;
+            float: right;
+            text-align: left;
+        }
+
+        .fa-bars {
+            color: #ffffff;
+            font-size: 30px !important;
+        }
+
+
+        .navbar-toggler {
+            outline: none !important;
+        }
+
+        .nav-link {
+            color: #992907 !important;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        #banner {
+            background-image: linear-gradient(to right, #2493be, #0b83b3);
+            color: #ffffff;
+        }
+
+        .promo-title {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+
+        .play-btn {
+            width: 45px;
+            margin: 20px;
+        }
+
+        #banner a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .bottom-img {
+            width: 100%;
+        }
+
+        #service {
+            padding: 50px 0;
+        }
+
+        .service-img {
+            width: 250px;
+            height: 300px;
+            margin-top: 40px;
+        }
+
+        .services {
+            padding: 20px;
+
+        }
+
+        .services h4 {
+            padding: 5px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+
+        .title::after {
+            content: ' ';
+            background: #0b83b3;
+            height: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            display: block;
+            transform: inherit;
+        }
+
+        #service .btn btn-primary {
+            box-shadow: none;
+            padding: 8px 25px;
+            border: none;
+            border-radius: 20px;
+            background-image: linear-gradient(to right, #2493be, #0b83b3);
+
+        }
+
+        a {
+            color: #fff !important;
+        }
+
+
+
+        /*-----------Promo-----------*/
+        #promo {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/math-equations.png);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            background-attachment: fixed;
+            text-align: center;
+            padding: 100px;
+            font-family: sans-serif;
+            font-size: 38px;
+        }
+
+        #about-us {
+            background: #f8f9fa;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        .about-title {
+            font-size: 40px;
+            font-weight: 400;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        #about-us img {
+            margin-top: 5%;
+        }
+
+
+        .accordion {
+            background-color: #efefef;
+            color: #000000 !important;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 17px !important;
+            transition: 0.4s;
+            display: block;
+            font-weight: bold;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #ffffff;
+            overflow: hidden;
+            color: #000;
+        }
+
+        .section_title {
+            color: #083b31;
+        }
+
+        .section_subtitle {
+            color: #000;
+            font-size: 20px;
+        }
+
+        /*--------price plan---------*/
+        #price {
+            padding: 20px;
+            background-color: #efefef;
+        }
+
+        .single-price {
+            margin: 10px auto;
+            display: inline;
+            float: left;
+            width: 100%;
+            background-color: #ffffff;
+            transition: 0.5s;
+
+
+        }
+
+
+        .single-price:hover {
+            box-shadow: 0 2px 20px rgb(74, 11, 104);
+        }
+
+        .price-head {
+            background-color: #1976b4;
+            display: inline;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        h1 {
+            color: #083b31;
+            text-align: center;
+
+        }
+
+        .price-head h2 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+
+        .price-head h3 {
+            font-size: 25px;
+            color: #ccc;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        #price span {
+            font-size: 15px;
+        }
+
+        .price-content {
+            display: inline;
+            float: left;
+            width: 100%;
+            padding: 0;
+        }
+
+        .price-content img {
+            display: block;
+            width: 255px;
+            height: 290px;
+            padding: 15px;
+        }
+
+        .price-content ul li {
+            border-bottom: 1px solid #000000;
+            padding: 15px 10px;
+            list-style: none;
+            color: #000000;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        ul li:last-child {
+            border: none;
+
+        }
+
+        .price-button {
+            display: inline;
+            float: left;
+            padding: 15px 15px 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .buy-btn {
+            background-color: #0b83b3;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 18px;
+            padding: 15px 50px;
+            transition: 0.5s;
+            text-align: center !important;
+        }
+
+        .col-md-3 a {
+
+            color: #ffffff;
+        }
+
+        .buy-btn:hover {
+            border-color: 1px solid #fff;
+            background-color: #61297a;
+        }
+
+        /*--------testimonails-------*/
+
+        #testimonails {
+            margin: 100px 0;
+        }
+
+        .testimonails {
+            border-left: 1px solid #0b83b3;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .testimonails img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+
+        .user-details {
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        /*-----social media-----------*/
+
+        #social-media {
+            background: #f8f9fa;
+            padding: 100px 0;
+        }
+
+        #social-media p {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .social-icons img {
+            width: 60px;
+            transition: 0.5s;
+        }
+
+        .social-icons a:hover img {
+            transform: translate(10px);
+        }
+
+        /*---------footer-------*/
+        #footer {
+            background-image: linear-gradient(to right, #2493be, #0b83b3);
+            color: #fff;
+        }
+
+        .footer-img {
+            width: 100%;
+        }
+
+        .footer-box {
+            padding: 20px;
+        }
+
+        .footer-box img {
+            width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .col-md-4 a {
+
+            color: #ffffff;
+
+        }
+
+        .list-unstyled footer-col-list ul li {
+            line-height: 1.6;
+            font-weight: 300;
+            font-family: 'Roboto', sans-serif;
+            color: #fff !important;
+            font-size: 13px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #footer hr {
+            border: 1px solid #ffffff !important;
+        }
+
+        .left-panel {
+            text-align: center;
+            position: relative;
+            font-size: 18px;
+        }
+
+        .footer-nav a {
+            font-weight: 500;
+            font-size: 18px;
+            color: #ffffff !important;
+        }
+
+        .support a {
+            color: #ffffff !important;
+        }
+
+        @media screen {
+            .price-content img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-----NavigationBar---->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <?xml version="1.0" standalone="no"?>
+                <svg width="300" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="RadialGradient1">
+                            <stop offset="0%" stop-color="blue" />
+                            <stop offset="100%" stop-color="red" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="50" y="20" rx="15" ry="15" width="70" height="60" fill="url(#RadialGradient1)" />
+                    <text fill="#2493be" font-size="70" font-family="Verdana" font-weight="900" x="60" y="76"
+                        stroke-linecap="round">
+                        S</text>
+                    <text x="125" y="45" fill="orange" font-size="30" font-family="Verdana" font-weight="900" x="60"
+                        y="45">SUTHAR</text>
+                    <line x1="125" y1="50" x2="270" y2="50" style="stroke:#e20c0c;stroke-width:2" />
+                    <text x="125" y="78" fill="blue" font-size="30" font-family="Verdana" font-weight="900" x="60"
+                        y="45">Solutions</text>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cbse.html">CBSE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\Dell\Desktop\Suthar Solutions New\Ncert Solutions.html">NCERT
+                            SOLUTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ncert books.html">NCERT BOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ncert exampler.html">NCERT EXAMPLER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us.html">ABOUT US</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </section>
+    <!---------banner---------->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">Get Free NCERT Solutions</p>
+                    <p>NCERT Solutions Class 6 to 12 Maths are provided here for free and also offers for free PDF
+                        Download. Clear your doubts
+                        with NCERT Solutions Class 6 to 12 prepared by our experts at sutharsolutions.</p>
+                    <a href="#"><img src="image/play-1.png" class="play-btn">Also Watch Video Tutorials</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/student1.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <img src="image/wave4.png" alt="wave" class="bottom-img">
+    </section>
+    <section id="service">
+        <div class="container text-center">
+            <h2 class="title">Welcome To Suthar Solutions</h2>
+            <h5>
+                Our main motive is to provide textbooks solutions free of cost.Such as NCERT Solutions, CBSE Sample
+                Papers, CBSE study material, NCERT books
+                and test papers with solutions in PDF form.which will help the students to better understand the
+                concepts and chapters.</h5>
+            <div class="row text-center">
+                <div class="col-md-4 services">`
+                    <img src="image/service1.png" class="service-img">
+                    <h4>Do Best in Exam</h4>
+                    <p>You can Download NCERT Books Solutions and study material in PDF format. which
+                        will help the students to better understand the concepts and chapters.Get maximum marks in exam.
+                    </p>
+                </div>
+                <div class="col-md-4 services">
+                    <img src="image/service2.png" class="service-img">
+                    <h4>Free Web Solutions</h4>
+                    <p>We provided HTML,CSS and JAVASCRIPT basic knowledge for web solutions.You can Download Web
+                        Solutions and Related study material in PDF format. </p>
+                </div>
+                <div class="col-md-4 services">
+                    <img src="image/network.png" class="service-img">
+                    <h4>free Ncert Solutions</h4>
+                    <p>We are trying to provide best quality of study material regarding Solutions of NCERT textbooks
+                        and
+                        Sample Papers, test,
+                        solved papers, etc.free of cost.</p>
+                </div>
+            </div>
+            <button class="btn btn-primary"><a href="#price">All Courses</a></button>
+        </div>
+    </section>
+    <section id="promo">
+        <div class="container">
+            <p><em>"The roots of education are bitter, but the fruit is sweet."</em> <br>– Aristotle</p>
+            <a href="About Us.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container">
+            <h2 class="title text-center">WHY CHOOSE US ?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image/career.png" class="service-img">
+                </div>
+                <div class="col-md-6 about-us">
+                    <p class="about-title">"Why we're different"</p>
+                    <div class="feature_content">
+                        <div class="accordions">
+                            <div class="elements_accordions">
+                                <div class="accordion_container">
+                                    <div class="accordion d-flex flex-row align-items-center">
+                                        <div>>In-depth Analysis Of The Subjects</div>
+                                    </div>
+                                    <div class="panel">
+                                        <p>We analyse your academic subjects in depth to present you with all the
+                                            concepts in a simple
+                                            and easy to understand language that makes learning an enjoyable affair.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion_container">
+                                    <div class="accordion d-flex flex-row align-items-center">
+                                        <div>>Expertise of Highly Trained Faculties</div>
+                                    </div>
+                                    <div class="panel">
+                                        <p>We have the expertise of the best and highly trained faculties who are
+                                            subject specialists
+                                            in their
+                                            respective fields.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion_container">
+                                    <div class="accordion d-flex flex-row align-items-center">
+                                        <div>>Tests And Quizzes To Track Knowledge And Growth</div>
+                                    </div>
+                                    <div class="panel">
+                                        <p>We have periodic tests and quizzes designed to analyse your level of
+                                            understanding
+                                            different
+                                            concepts and to assist you in your learning journey.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion_container">
+                                    <div class="accordion d-flex flex-row align-items-center">
+                                        <div>>E-study Materials With Every Course</div>
+                                    </div>
+                                    <div class="panel">
+                                        <p>We provide comprehensive e learning materials with every course that adds up
+                                            to your
+                                            convenience and also promotes learning on the go.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion_container">
+                                    <div class="accordion d-flex flex-row align-items-center">
+                                        <div>>All Courses At One Place And In Your Native Language</div>
+                                    </div>
+                                    <div class="panel">
+                                        <p>You have the option to view all your courses at one place and also in your
+                                            native language
+                                            which facilitates simple and hassle free learning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!----------Price Plan-------->
+
+    <section id="price">
+        <div class="container">
+            <h2 class="title text-center">CLASS-WISE SOLUTIONS</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 6</h2>
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class6mathcovereng.jpg">
+                        </div>
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 6 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 7</h2>
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class7mathcovereng.jpg">
+                        </div>
+
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 7 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 8</h2>
+
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class8mathcovereng.jpg">
+                        </div>
+
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 8 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 9</h2>
+
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class9mathcovereng.jpg"> </div>
+
+
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 9 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 10</h2>
+
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class10mathcovereng.jpg"> </div>
+
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 10 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 11</h2>
+
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class11mathcovereng.jpg"> </div>
+
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 11 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>NCERT SOLUTIONS FOR CLASS 12</h2>
+
+                        </div>
+                        <div class="price-content">
+                            <img src="image/class12mathcovereng.jpg">
+                        </div>
+                        <div class="price-button">
+                            <a class="buy-btn" href="ncert solutions for class 12 maths.html" target="blank">Get
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price-head">
+                            <h2>SOLUTIONS FOR WEB DEVELOPMENT</h2>
+                        </div>
+                        <div class="price-content">
+                            <img src="image/web devlop.jpg">
+                        </div>
+                        <div class="price-button">
+                            <a class="buy-btn" href="solutions for web development.html" target="blank">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------Testimonails--------->
+    <section id="testimonails">
+        <div class="container">
+            <h2 class="title text-center">Testimonails</h2>
+            <div class="row">
+                <div class="col-md-5 testimonails">
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas consequuntur
+                        neque.
+                        Asperiores nam pariatur quibusdam quae natus ipsum. Iure eveniet iste beatae error a
+                        dolores hic
+                        nihil, vero adipisci!</P>
+                    <img src="image/harshit.jpg">
+                    <p class="user-details"><b>Harshit</b><br>Student</p>
+                </div>
+                <div class="col-md-5 testimonails">
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas consequuntur
+                        neque.
+                        Asperiores nam pariatur quibusdam quae natus ipsum. Iure eveniet iste beatae error a
+                        dolores
+                        hic
+                        nihil, vero adipisci!</P>
+                    <img src="image/chesta.jpg">
+                    <p class="user-details"><b>Chesta</b><br>Student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------social-media-------->
+    <section id="social-media">
+        <div class="container text-center">
+            <p>FIND US ON SOCIAL MEDIA</p>
+            <div class="social-icons">
+                <a href="#"><img src="image/facebook.png"></a>
+                <a href="#"><img src="image/twitter.png"></a>
+                <a href="#"><img src="image/youtube.png"></a>
+                <a href="#"><img src="image/snapchat2.png"></a>
+                <a href="#"><img src="image/instagram.png"></a>
+                <a href="#"><img src="image/whatsapp.png"></a>
+            </div>
+        </div>
+    </section>
+    <!---------footer section--------->
+    <section id="footer">
+        <img src="image/wave7.png" class="footer-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>COURSES</h5>
+                    <ul class="list-unstyled footer-col-list">
+                        <li><a href="/cbse/" target="_blank" rel="noopener">CBSE</a></li>
+                        <li><a href="/ncert/" target="_blank" rel="noopener">NCERT</a></li>
+                        <li><a href="/cbse/cbse-sample-papers/" target="_blank" rel="noopener">CBSE Sample
+                                Papers</a></li>
+                        <li><a href="/cbse-study-material/cbse-previous-year-question-paper/" target="_blank"
+                                rel="noopener">CBSE Question Papers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>WEB DEVELOPMENT</h5>
+                    <ul class="list-unstyled footer-col-list">
+                        <li><a href="" target="_blank">HTML</a></li>
+                        <li><a href="" target="_blank">CSS</a></li>
+                        <li><a href="" target="_blank">JAVASCRIPT</a></li>
+                        <li><a href="" target="_blank">PHYTHON</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    <h5>FREE TEXTBOOK SOLUTIONS</h5>
+                    <ul class="list-unstyled footer-col-list">
+                        <li><a href="Ncert Solutions.html" target="_blank" rel="noopener">NCERT Solutions</a>
+                        </li>
+                        <li><a href="ncert exampler.html" target="_blank" rel="noopener">NCERT Exemplar</a>
+                        </li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 6 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 6</a></li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 7 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 7</a></li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 8 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 8</a></li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 9 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 9</a></li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 10 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 10</a></li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 11 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 11</a></li>
+                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 12 maths.html"
+                                target="_blank" rel="noopener">NCERT Solutions For
+                                Class 12</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="left-panel">
+            <ul class="footer-nav">
+                <li><a href="#top">Home&nbsp;&nbsp;|</a>
+                    <a href="About Us.html">&nbsp;&nbsp;About Us&nbsp;&nbsp;|</a>
+                    <a href="blog.html">&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;| </a>
+                    <a href="terms.html">&nbsp;&nbsp;Terms &amp;Conditions&nbsp;&nbsp;|</a>
+                    <a href="Ncert Solutions.html">&nbsp;&nbsp;NCERT Solutions&nbsp;&nbsp;</a>
+
+                </li>
+            </ul>
+            <div class="support">
+                <a href="About Us.html">Email:-&nbsp;<i class="fa fa-envelope-o"></i>&nbsp;sutharsolutions@gmail.com</a>
+            </div>
+            <div class="text-center">
+                <p>&copy &nbsp;2020 sutharsolutions.com</p>
+                <p>All Right Reserved</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
