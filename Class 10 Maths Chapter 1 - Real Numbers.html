@@ -41,7 +41,7 @@
                 }
 
 
-                body,
+               
                 #wrapper {
                         width: 100%;
                         background-color: rgb(236, 235, 236);
@@ -271,10 +271,12 @@
                 .support a {
                         color: #ffffff !important;
                 }
-                @media screen{
-                        body {
-                       width: 100%; 
-                        }}
+               @media (max-width: 700px) {
+  .row, .navbar, p, img {   
+    flex-direction: column;
+          width: 40%
+  }
+}
         </style>
 </head>
 
@@ -558,7 +560,7 @@
                 </section>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="image/up-arrow.png" height="40px"
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="up-arrow.png" height="40px"
                         width="40px">
         </button>
         <script>
