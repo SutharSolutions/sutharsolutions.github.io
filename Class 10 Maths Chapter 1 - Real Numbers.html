@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class 10 Maths Chapter 1 - Real Numbers</title>
+
+        <meta name="description"
+                content="NCERT Solutions Class 6 to 12 Maths are provided here for free and also offers for free PDF Download. Clear your doubts with NCERT Solutions Class 6 to 12 prepared by our experts at sutharsolutions." />
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="Ncert Solutions" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="Ncert Solutions" />
+
+        <meta property="og:description"
+                content="NCERT Solutions Class 6 to 12 Maths are provided here for free and also offers for free PDF Download. Clear your doubts with NCERT Solutions Class 6 to 12 prepared by our experts at sutharsolutions." />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="sutharsolutions" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                body {
+                        font-family: sans-serif;
+                }
+
+
+                body,
+                #wrapper {
+                        width: 100%;
+                        background-color: rgb(236, 235, 236);
+                }
+
+                #container {
+                        width: 900px;
+                        height: auto;
+                        margin: 10px auto;
+                        padding: 20px;
+                        background-color: #ffffff;
+                        text-align: justify;
+                }
+
+                .banner-title {
+                        background-color: #0b83b3;
+                        font-size: 35px;
+                        text-align: center;
+                        color: #ffffff;
+                }
+
+                #post {
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        font-family: Roboto, sans-serif;
+                        font-size: 14px;
+                        line-height: 1.42857143;
+                        color: #333;
+                        box-sizing: border-box;
+                        display: block;
+                }
+
+
+
+                #myBtn {
+                        display: none;
+                        /* Hidden by default */
+                        position: fixed;
+                        /* Fixed/sticky position */
+                        bottom: 30px;
+                        /* Place the button at the bottom of the page */
+                        right: 20px;
+                        /* Place the button 30px from the right */
+                        z-index: 99;
+                        /* Make sure it does not overlap */
+                        border: 1px solid black;
+                        /* Remove borders */
+                        outline: none;
+                        /* Remove outline */
+                        background-color: #ffffff
+                                /* Set a background color */
+                                color: white;
+                        /* Text color */
+                        cursor: pointer;
+                        /* Add a mouse pointer on hover */
+                        padding: 5px;
+                        /* Some padding */
+                        border-radius: 10px;
+                        /* Rounded corners */
+                        font-size: 18px;
+                        /* Increase font size */
+                }
+
+                #myBtn:hover {
+                        background-color: #777777;
+                        /* Add a dark-grey background on hover */
+                }
+
+                /*---------Navigation--------*/
+                #nav-bar {
+                        position: sticky;
+                        top: 0;
+                        z-index: 10;
+                }
+
+                .navbar {
+                        background-image: linear-gradient(to right, #2493be, #0b83b3);
+                        padding: 0 !important;
+                }
+
+                .navbar-brand {
+                        padding-left: 10px;
+                        font-size: 10px;
+
+                        color: #ffffff;
+                        font-weight: 900;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                .navbar-nav li {
+                        padding: 0 10px;
+                }
+
+                .navbar-nav li a {
+                        color: #ffffff !important;
+                        font-weight: 600;
+                        float: right;
+                        text-align: left;
+                }
+
+                .fa-bars {
+                        color: #ffffff;
+                        font-size: 30px !important;
+                }
+
+
+                .navbar-toggler {
+                        outline: none !important;
+                }
+
+                .nav-link {
+                        font-weight: 600;
+                        font-size: 20px;
+                }
+
+                .breadcrumb {
+
+                        background-color: #ffffff;
+                        padding: 5px;
+                        border-bottom: solid 1px #eee;
+                        border-bottom-width: 1px;
+                        border-bottom-style: solid;
+                        border-bottom-color: rgb(148, 138, 138);
+                        width: 100%;
+                }
+
+                h1 {
+                        font-size: 1em;
+                        margin: .67em 0
+                }
+
+                h2 {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        color: #0a5c3a;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-decoration: underline;
+                }
+
+                * {
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                }
+
+                ul {
+                        display: block;
+                        list-style-type: disc;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        padding-inline-start: 40px;
+                        color: #000 !important;
+                }
+
+                .btn {
+                        background-color: DodgerBlue;
+                        border: none;
+                        color: white;
+                        padding: 12px 30px;
+                        cursor: pointer;
+                        font-size: 20px;
+                        text-align: center;
+
+                }
+
+                /* Darker background on mouse-over */
+                .btn:hover {
+                        background-color: RoyalBlue;
+                }
+
+                /*---------footer-------*/
+                #footer {
+                        background-image: linear-gradient(to right, #2493be, #0b83b3);
+                        color: #fff;
+                        margin-top: 10px;
+                        padding: 20px;
+                }
+
+                .footer-img {
+                        width: 100%;
+                }
+
+                .footer-box {
+                        padding: 20px;
+                }
+
+                .footer-box img {
+                        width: 350px;
+                        margin-bottom: 20px;
+                }
+
+                .col-md-4 a {
+
+                        color: #ffffff;
+
+                }
+
+                .list-unstyled footer-col-list ul li {
+                        line-height: 1.6;
+                        font-weight: 300;
+                        font-family: 'Roboto', sans-serif;
+                        color: #fff !important;
+                        font-size: 13px;
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                }
+
+                #footer hr {
+                        border: 1px solid #ffffff !important;
+                }
+
+                .left-panel {
+                        text-align: center;
+                        position: relative;
+                        font-size: 18px;
+                }
+
+                .footer-nav a {
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #ffffff !important;
+                }
+
+                .support a {
+                        color: #ffffff !important;
+                }
+        </style>
+</head>
+
+<body>
+        <!-----NavigationBar---->
+        <section id="nav-bar">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">
+                                <?xml version="1.0" standalone="no"?>
+                                <svg width="300" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                                <linearGradient id="RadialGradient1">
+                                                        <stop offset="0%" stop-color="blue" />
+                                                        <stop offset="100%" stop-color="red" />
+                                                </linearGradient>
+                                        </defs>
+                                        <rect x="50" y="4" rx="15" ry="15" width="70" height="64"
+                                                fill="url(#RadialGradient1)" />
+                                        <text fill="#2493be" font-size="70" font-family="Verdana" font-weight="900"
+                                                x="60" y="61" stroke-linecap="round">
+                                                S</text>
+                                        <text x="125" y="32" fill="orange" font-size="30" font-family="Verdana"
+                                                font-weight="900" x="60" y="45">SUTHAR</text>
+                                        <line x1="125" y1="38" x2="270" y2="38" style="stroke:#e20c0c;stroke-width:2" />
+                                        <text x="125" y="65" fill="blue" font-size="30" font-family="Verdana"
+                                                font-weight="900" x="60" y="45">Solutions</text>
+                                </svg></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link"
+                                                        href="C:\Users\Dell\Desktop\Suthar Solutions New\index.html">HOME</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link"
+                                                        href="C:\Users\Dell\Desktop\Suthar Solutions New\cbse.html">CBSE</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link"
+                                                        href="C:\Users\Dell\Desktop\Suthar Solutions New\Ncert Solutions.html">NCERT
+                                                        SOLUTIONS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link"
+                                                        href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert books.html">NCERT
+                                                        BOOKS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link"
+                                                        href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert exampler.html">NCERT
+                                                        EXAMPLER</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link"
+                                                        href="C:\Users\Dell\Desktop\Suthar Solutions New\About Us.html">ABOUT
+                                                        US</a>
+                                        </li>
+                                </ul>
+
+                        </div>
+                </nav>
+
+        </section>
+        <div id="wrapper">
+                <div id="container">
+                        <section>
+                                <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a
+                                                                href="C:\Users\Dell\Desktop\Suthar Solutions New\index.html">Home</a>
+                                                </li>
+                                                <li class="breadcrumb-item"><a
+                                                                href="C:\Users\Dell\Desktop\Suthar Solutions New\Ncert Solutions.html">Ncert
+                                                                Solutions</a>
+                                                </li>
+                                                <li class="breadcrumb-item"><a
+                                                                href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 10 maths.html">Ncert
+                                                                Solutions for Class 10 Maths</a>
+                                                </li>
+                                                <li class="breadcrumb-item active" aria-current="page">Class 10 Maths
+                                                        Chapter 1 - Real Numbers
+                                                </li>
+                                        </ol>
+                                </nav>
+                        </section>
+
+                        <section>
+
+                                <div class="banner-title">
+                                        <h1>Class 10 Maths Chapter 1 - Real Numbers</h1>
+                                </div>
+                                <article>
+                                        <p>In this chapter, you have studied the following points:</p>
+                                        <p> 1. Euclid’s division lemma :</p>
+                                        <p>Given positive integers a and b, there exist whole numbers q and r satisfying
+                                                a
+                                                = bq + r, 0 ≤ r < b.</p>
+                                                        <p>2. Euclid’s division algorithm : This is based on Euclid’s
+                                                                division lemma. According to this, the HCF of any two
+                                                                positive integers
+                                                                a and b, with a> b, is obtained as follows:</p>
+                                                        <p>Step 1 : Apply the division lemma to find q and r where a =
+                                                                bq + r, 0 ≤
+                                                                r < b.</p>
+                                                                        <p>Step 2 : If r=0, the HCF is b. If r ≠ 0,
+                                                                                apply Euclid’s lemma to
+                                                                                b and r.</p>
+                                                                        <p>Step 3 : Continue the process till the
+                                                                                remainder is
+                                                                                zero. The divisor at this stage will be
+                                                                                HCF (a, b). Also, HCF(a,
+                                                                                b)=HCF(b, r).</p>
+                                                                        <p>3. The Fundamental Theorem of Arithmetic :
+                                                                                Every
+                                                                                composite number can be expressed
+                                                                                (factorised) as a product of
+                                                                                primes, and this factorisation is
+                                                                                unique, apart from the order
+                                                                                in which the prime factors occur.</p>
+                                                                        <p>4. If p is a prime and p
+                                                                                divides a2, then p divides a, where a is
+                                                                                a positive integer.</p>
+                                                                        <p>5.
+                                                                                To prove that 2, 3 are irrationals.</p>
+                                                                        <p>6. Let x be a rational
+                                                                                number whose decimal expansion
+                                                                                terminates. Then we can express x
+                                                                                in the form p q , where p and q are
+                                                                                coprime, and the prime
+                                                                                factorisation of q is of the form 2n5m,
+                                                                                where n, m are
+                                                                                non-negative integers. </p>
+                                                                        <p>7. Let x=p q be a rational number, such
+                                                                                that the prime factorisation of q is of
+                                                                                the form 2n5m, where n,
+                                                                                m are non-negative integers. Then x has
+                                                                                a decimal expansion
+                                                                                which terminates. </p>
+                                                                        <p>8. Let x=p q be a rational number, such that
+                                                                                the prime factorisation of q is not of
+                                                                                the form 2n 5m, where n,
+                                                                                m are non-negative integers. Then x has
+                                                                                a decimal expansion
+                                                                                which is non-terminating repeating
+                                                                                (recurring). </p>
+                                </article>
+
+
+
+                                <div class="multiple-image-list-view-content mini-scroll-bar">
+                                        <section id="Exercise 1.1">
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\1.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\2.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\3.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\4.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\5.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\6.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\7.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\8.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\9.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\10.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\11.jpg"
+                                                                alt="Exercise1.1"></p>
+                                                <p><img src="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\NEW\12.jpg"
+                                                                alt="Exercise1.1"></p>
+                                        </section>
+                                </div>
+                        </section>
+                        <h5>Class 10 Maths Chapter 1 - Real Numbers Ncert Solutions PDF Download </h5>
+                        <a href="C:\Users\Dell\Desktop\Suthar Solutions New\Class 10 Maths\Chapter1\Chapter 1.pdf"
+                                target="blank">
+                                <button class="btn" type="submit"><i class="fa fa-download"></i> Class 10 Maths Chapter
+                                        1
+                                        - Real Numbers
+                                        Download Here
+                                </button>
+                        </a>
+
+                </div>
+
+                <!---------footer section--------->
+                <section id="footer">
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-md-4">
+                                                <h5>COURSES</h5>
+                                                <ul class="list-unstyled footer-col-list">
+                                                        <li><a href="" target="_blank" rel="noopener">CBSE</a>
+                                                        </li>
+                                                        <li><a href="/ncert/" target="_blank" rel="noopener">NCERT</a>
+                                                        </li>
+                                                        <li><a href="/cbse/cbse-sample-papers/" target="_blank"
+                                                                        rel="noopener">CBSE Sample
+                                                                        Papers</a></li>
+                                                        <li><a href="/cbse-study-material/cbse-previous-year-question-paper/"
+                                                                        target="_blank" rel="noopener">CBSE
+                                                                        Question
+                                                                        Papers</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <h5>WEB DEVELOPMENT</h5>
+                                                <ul class="list-unstyled footer-col-list">
+                                                        <li><a href="" target="_blank">HTML</a></li>
+                                                        <li><a href="" target="_blank">CSS</a></li>
+                                                        <li><a href="" target="_blank">JAVASCRIPT</a>
+                                                        </li>
+                                                        <li><a href="" target="_blank">PHYTHON</a></li>
+                                                </ul>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                                <h5>FREE TEXTBOOK SOLUTIONS</h5>
+                                                <ul class="list-unstyled footer-col-list">
+                                                        <li><a href="/ncert-solutions/" target="_blank"
+                                                                        rel="noopener">NCERT
+                                                                        Solutions</a>
+                                                        </li>
+                                                        <li><a href="/ncert-exemplar/" target="_blank"
+                                                                        rel="noopener">NCERT
+                                                                        Exemplar</a>
+                                                        </li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 6 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 6</a></li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 7 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 7</a></li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 8 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 8</a></li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 9 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 9</a></li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 10 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 10</a></li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 11 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 11</a></li>
+                                                        <li><a href="C:\Users\Dell\Desktop\Suthar Solutions New\ncert solutions for class 12 maths.html"
+                                                                        target="_blank" rel="noopener">NCERT
+                                                                        Solutions
+                                                                        For
+                                                                        Class 12</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="left-panel">
+                                <ul class="footer-nav">
+                                        <li><a href="#top">Home&nbsp;&nbsp;|</a>
+                                                <a href="About Us.html" target="_blank">&nbsp;&nbsp;About
+                                                        Us&nbsp;&nbsp;|</a>
+                                                <a href="blog.html" target="_blank">&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;|
+                                                </a>
+                                                <a href="terms.html" target="_blank">&nbsp;&nbsp;Terms
+                                                        &amp;Conditions&nbsp;&nbsp;|</a>
+                                                <a href="Ncert Solutions.html" target="_blank">&nbsp;&nbsp;NCERT
+                                                        Solutions&nbsp;&nbsp;</a>
+
+                                        </li>
+                                </ul>
+                                <div class="support">
+                                        <a href="About Us.html" target="_blank">Email:-&nbsp;<i
+                                                        class="fa fa-envelope-o"></i>&nbsp;sutharsolutions@gmail.com</a>
+                                </div>
+                                <div class="text-center">
+                                        <p>&copy &nbsp;2020 sutharsolutions.com</p>
+                                        <p>All Right Reserved</p>
+                                </div>
+                        </div>
+                </section>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="image/up-arrow.png" height="40px"
+                        width="40px">
+        </button>
+        <script>
+                var x, i, j, l, ll, selElmnt, a, b, c;
+                /*look for any elements with the class "custom-select":*/
+                x = document.getElementsByClassName("custom-select");
+                l = x.length;
+                for (i = 0; i < l; i++) {
+                        selElmnt = x[i].getElementsByTagName("select")[0];
+                        ll = selElmnt.length;
+                        /*for each element, create a new DIV that will act as the selected item:*/
+                        a = document.createElement("DIV");
+                        a.setAttribute("class", "select-selected");
+                        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                        x[i].appendChild(a);
+                        /*for each element, create a new DIV that will contain the option list:*/
+                        b = document.createElement("DIV");
+                        b.setAttribute("class", "select-items select-hide");
+                        for (j = 1; j < ll; j++) {
+                                /*for each option in the original select element,
+                                create a new DIV that will act as an option item:*/
+                                c = document.createElement("DIV");
+                                c.innerHTML = selElmnt.options[j].innerHTML;
+                                c.addEventListener("click", function (e) {
+                                        /*when an item is clicked, update the original select box,
+                                        and the selected item:*/
+                                        var y, i, k, s, h, sl, yl;
+                                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                        sl = s.length;
+                                        h = this.parentNode.previousSibling;
+                                        for (i = 0; i < sl; i++) {
+                                                if (s.options[i].innerHTML == this.innerHTML) {
+                                                        s.selectedIndex = i;
+                                                        h.innerHTML = this.innerHTML;
+                                                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                                                        yl = y.length;
+                                                        for (k = 0; k < yl; k++) {
+                                                                y[k].removeAttribute("class");
+                                                        }
+                                                        this.setAttribute("class", "same-as-selected");
+                                                        break;
+                                                }
+                                        }
+                                        h.click();
+                                });
+                                b.appendChild(c);
+                        }
+                        x[i].appendChild(b);
+                        a.addEventListener("click", function (e) {
+                                /*when the select box is clicked, close any other select boxes,
+                                and open/close the current select box:*/
+                                e.stopPropagation();
+                                closeAllSelect(this);
+                                this.nextSibling.classList.toggle("select-hide");
+                                this.classList.toggle("select-arrow-active");
+                        });
+                }
+                function closeAllSelect(elmnt) {
+                        /*a function that will close all select boxes in the document,
+                        except the current select box:*/
+                        var x, y, i, xl, yl, arrNo = [];
+                        x = document.getElementsByClassName("select-items");
+                        y = document.getElementsByClassName("select-selected");
+                        xl = x.length;
+                        yl = y.length;
+                        for (i = 0; i < yl; i++) {
+                                if (elmnt == y[i]) {
+                                        arrNo.push(i)
+                                } else {
+                                        y[i].classList.remove("select-arrow-active");
+                                }
+                        }
+                        for (i = 0; i < xl; i++) {
+                                if (arrNo.indexOf(i)) {
+                                        x[i].classList.add("select-hide");
+                                }
+                        }
+                }
+                /*if the user clicks anywhere outside the select box,
+                then close all select boxes:*/
+                document.addEventListener("click", closeAllSelect);
+        </script>
+
+        <script>
+
+                //Get the button:
+                myBtn = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+                        if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+                                myBtn.style.display = "block";
+                        } else {
+                                myBtn.style.display = "none";
+                        }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                        document.body.scrollTop = 0; // For Safari
+                        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                } 
+        </script>
+
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+                var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+</body>
+
+</html>
